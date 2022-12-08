@@ -1,0 +1,161 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+}
+/* Navigation Bar */
+.navbar-container{
+    height: 15vh;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+[alt="brand-logo"]{
+    height: 40px;
+    width: 130px;
+}
+.list{
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 20px;
+    font-weight:500;
+    cursor: pointer;
+    gap: 16%;
+}
+.list-item:first-child{
+    font-weight:900;
+    font-size: 22px;
+}
+.list-item:first-child::after{
+    content: "";
+    display: block;
+    width: 60%;
+	height: 3px;
+	background-color: #000;
+    margin-left: 25%;
+}
+.button-group{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+svg{
+    height: 27px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.nav-button{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #808080;
+    padding: 7px 40px;
+    font-size: 20px;
+    border-radius: 12px;   
+}
+/* Hero Left Photo Section */
+.hero-container{
+    height: 85vh;
+    display: flex;
+    position: relative;
+}
+[alt="person-hero-iamge"] {
+    width: 440px;
+    position: absolute;
+    left: 0;
+    bottom: 90px; 
+    z-index: 1;   
+}
+.square {
+    position: absolute;
+    left: 100px;
+    bottom: 15px;
+  }
+.globe{
+    position: absolute;
+    left: 50%;
+}
+.star{
+    position: absolute;
+    top:50px;
+    right:1%;
+}
+.star::before{
+    content: "";
+    display: inline-block;
+    background: url("./assets/start.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -470px;
+    right: 750px;
+}
+/*Hero Right Section */
+.hero-container-right{
+    width: 65%;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:20%; 
+    right: 0;
+    text-align: center;
+}
+.hero-heading{ 
+    width: 100%;  
+    font-family: 'Orbitron', sans-serif;
+    font-size:65px;
+    text-align: right;
+}
+.hero-description{
+    margin-top: -10%;
+    width:72%;
+    color: #808080;
+}
+.button-email{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #808080;
+    padding: 7px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;  
+}
+.button-join{
+    margin-left: 10px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px; 
+    font-family: 'Orbitron', sans-serif;
+}
+.contact-heading{
+    color: #808080;
+    font-size: 17px;
+    font-weight: 400;    
+}
+.icons span img{
+    margin: 10px 6px 0px;
+    width: 30px;   
+}
